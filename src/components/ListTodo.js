@@ -8,7 +8,7 @@ const ListTodo = (todos) => (
       {todos.todos.map(todo =>
         <Todo
           key={todo.id}
-          onClick={ () => todos.onDeleteList(todo.id)}
+          onDeleteList={ () => todos.onDeleteList(todo.id, todos)}
           onEditList={ () => todos.onEditList(todo.id)}
           onUpdateCompleted={() => todos.onUpdateCompleted(todo.id, todo.status, todos.todos)}
           {...todo}

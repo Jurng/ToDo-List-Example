@@ -6,10 +6,13 @@ export const addTodo = (text) => ({
     text
 })
 
-export const deleteList = (id) => ({
-  type: 'DELETE_LIST_TODO',
-  id
-})
+export const deleteList = (id,todos) => {
+  return {
+    type: 'DELETE_LIST_TODO',
+    id,
+    todos
+  }
+}
 
 export const editList = (id) => ({
   type: 'EDIT_LIST_TODO',
@@ -23,7 +26,11 @@ export const updateCompleted = (id, status, todos) => ({
     todos
   })
 
-
+export const listNumberAfterDelete = (id,todos) => ({
+    type: 'DELETE_LIST_TODO',
+    id,
+    todos
+})
 export const updateList = (text,id) => ({
   type: 'UPDATE_LIST_TODO',
   id,
@@ -31,8 +38,6 @@ export const updateList = (text,id) => ({
 })
 
 
-export const updateInput= (text, id) => { console.log(text);return ({
-  type: 'UPDATE_INPUT',
-  text
-})}
+
+
 

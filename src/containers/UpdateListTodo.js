@@ -23,7 +23,7 @@ class UpdateListTodo extends Component {
     >
       <div className="input-group text-box-list-style">
 
-        <input type="text" className="form-control input-edit-style"  ref={node => { updateListValue = node }} onChange={this.handleChange} />
+        <input type="text" className="form-control input-edit-style"  ref={node => { updateListValue = node }}  />
         <span className="input-group-btn">
           <button className="btn btn-default" type="submit">Update!</button>
         </span>

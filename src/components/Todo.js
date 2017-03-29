@@ -14,7 +14,7 @@ const Todo = (todos) => {
         <span>
           <a href="#" onClick={todos.onEditList} className="btn-common"><i className="glyphicon glyphicon-wrench"></i></a>
           &nbsp;
-          <a href="#" onClick={todos.onClick}  className="btn-common"><i className="glyphicon glyphicon-remove"></i></a>
+          <a href="#" onClick={todos.onDeleteList}  className="btn-common"><i className="glyphicon glyphicon-remove"></i></a>
         </span>
     )
   }

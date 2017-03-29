@@ -7,7 +7,10 @@ const mapStateToProps = (state) => ( {'todos' : state.todos} )
 
 const mapDispatchToProps = (dispatch) => {
   return{
-    onDeleteList:(id) => {dispatch(Actions.deleteList(id))},
+    onDeleteList:(id, todos) => {
+        dispatch(Actions.deleteList(id, todos));
+      return dispatch(Actions.listNumberAfterDelete(id, todos))
+    },
     onEditList:(id) => {dispatch(Actions.editList(id))},
     onUpdateCompleted: (id, status, todos) => { dispatch(Actions.updateCompleted(id, status, todos)) }
   }
