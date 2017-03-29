@@ -1,0 +1,130 @@
+body {
+  background-color:#e8e8e8 !important;
+}
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+.todo-header {
+   padding: 10px 5px 5px 10px;
+   background-color: #80d087;
+   position:relative;
+}
+.todo-header h4{
+   color:#656565;
+}
+.todo-header:after{
+   content: "";
+   display: table;
+   clear: both;
+}
+.todo-header  a.btn-add {
+  float:right;
+}
+.todo-complted {
+  background-color: #FFFFFF;
+  border-bottom:1px solid #eaeaea;
+  border-top:0;
+  padding:5px;
+  color:#1b9221;
+}
+.todo-list {
+  border-top:0;
+/*  height:300px;
+  overflow-y:auto;*/
+
+}
+h4.header-text {
+  display: inline;
+}
+
+.todo-list input[type="checkbox"]:checked + label{
+  transition: all .3s ease;
+
+  text-decoration: line-through;
+  color: rgba(0,0,0,.3);
+}
+
+.todo-list ul.list {
+  list-style: none;
+}
+.todo-list ul.list li {
+  border-bottom:1px solid #eaeaea;
+  min-height:35px;
+  line-height:35px;
+   position:relative;
+   background-color:#FFFFFF;
+
+}
+.todo-list ul.list li label{
+  cursor: pointer;
+  width: 85%;
+  padding-left:30px;
+  padding-bottom:5px;
+  position:relative;
+  word-wrap: break-word;
+  margin-right: 3px;
+  margin-bottom:0;
+  color:#848887;
+}
+.todo-list ul.list li label:after{
+  position:absolute;
+  content:'';
+  top:5px;
+  bottom:5px;
+  right:0;
+  border-right:1px solid #eaeaea;
+}
+.todo-list ul.list li label:hover{
+  cursor: pointer;
+  padding-left:30px;
+  background-color:#eaeaea;
+}
+.checkbox-bd {
+  position: absolute;
+  left: 8px;
+  top:7px;
+  z-index:1;
+}
+
+.text-box-list-style {
+   width: 100%;
+   padding-left:30px;
+}
+
+.btn-add .btn-common {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+a.btn-common {
+  border: 0;
+  padding: 2px 5px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius:    2px;
+  background-color: #FFFFFF;
+}
+a.btn-common:hover{
+  background-color: #004203;
+}
+
+.btn-common i{
+  color:#3fa887;
+}
+.text-box-list-style {
+  padding-top: 1px;
+}
+.text-box-list-style .input-edit-style{
+  border:0;
+  background-color: #f3f3f3;
+}
+
+
